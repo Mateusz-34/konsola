@@ -1,13 +1,143 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="PeselGUI">
-  <grid id="27dc6" row-count="1" column-count="1" layout-manager="GridLayoutManager">
+  <grid id="27dc6" binding="glowny" layout-manager="GridLayoutManager" row-count="7" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
     <margin top="0" left="0" bottom="0" right="0"/>
     <constraints>
-      <xy x="20" y="20" width="500" height="400"/>
-      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+      <xy x="20" y="20" width="965" height="894"/>
     </constraints>
-    <properties/>
+    <properties>
+      <background color="-10510688"/>
+    </properties>
     <border type="none"/>
-    <children/>
+    <children>
+      <component id="1e1bf" class="javax.swing.JLabel" binding="numerLabel">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Numer"/>
+        </properties>
+      </component>
+      <component id="f352" class="javax.swing.JTextField" binding="textField1" default-binding="true">
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-983041"/>
+        </properties>
+      </component>
+      <component id="6ad9f" class="javax.swing.JLabel" binding="imieLabel">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Imie"/>
+        </properties>
+      </component>
+      <component id="3ccfc" class="javax.swing.JTextField" binding="textField2" default-binding="true">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-983041"/>
+        </properties>
+      </component>
+      <component id="c81b5" class="javax.swing.JLabel" binding="nazwiskoLabel">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Nazwisko"/>
+        </properties>
+      </component>
+      <component id="92392" class="javax.swing.JTextField" binding="textField3" default-binding="true">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-983041"/>
+        </properties>
+      </component>
+      <component id="f87a6" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="0" column="2" row-span="3" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="-1" height="180"/>
+          </grid>
+        </constraints>
+        <properties>
+          <icon value="000-zdjecie.png"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="6d7f2" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="0" column="3" row-span="3" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="-1" height="180"/>
+          </grid>
+        </constraints>
+        <properties>
+          <icon value="000-odcisk.png"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="1bb23" class="javax.swing.JLabel" binding="kolorOczuLabel">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Kolor oczu"/>
+        </properties>
+      </component>
+      <component id="db6e2" class="javax.swing.JRadioButton" binding="niebieskieRadioButton" default-binding="true">
+        <constraints>
+          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-983041"/>
+          <selected value="true"/>
+          <text value="niebieskie"/>
+        </properties>
+      </component>
+      <component id="7a71f" class="javax.swing.JRadioButton" binding="zieloneRadioButton" default-binding="true">
+        <constraints>
+          <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-983041"/>
+          <text value="zielone"/>
+        </properties>
+      </component>
+      <component id="cf5b8" class="javax.swing.JRadioButton" binding="piwneRadioButton" default-binding="true">
+        <constraints>
+          <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-983041"/>
+          <text value="piwne"/>
+        </properties>
+      </component>
+      <component id="7f622" class="javax.swing.JButton" binding="OKButton" default-binding="true">
+        <constraints>
+          <grid row="6" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-983041"/>
+          <text value="OK"/>
+        </properties>
+      </component>
+    </children>
   </grid>
+  <buttonGroups>
+    <group name="buttonGroup1">
+      <member id="db6e2"/>
+      <member id="cf5b8"/>
+      <member id="7a71f"/>
+    </group>
+  </buttonGroups>
 </form>

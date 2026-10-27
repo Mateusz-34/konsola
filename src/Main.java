@@ -1,4 +1,8 @@
-package PACKAGE_NAME;
+public class Main {
+    public static void main(String[] args) {
+        Pesel p1 = new Pesel("55030101193");
 
-public class main {
+        System.out.println(p1);
+        System.out.println(p1.plec());
+    }
 }
